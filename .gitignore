@@ -315,3 +315,18 @@ third_party/gflags/
 
 # Test output file logs to ignore
 stats_log
+script/installation/ubuntu-bionic-18.04-cloudimg-console.log
+script/installation/.vagrant/machines/default/virtualbox/action_provision
+script/installation/.vagrant/machines/default/virtualbox/action_set_name
+script/installation/.vagrant/machines/default/virtualbox/box_meta
+script/installation/.vagrant/machines/default/virtualbox/creator_uid
+script/installation/.vagrant/machines/default/virtualbox/id
+script/installation/.vagrant/machines/default/virtualbox/index_uuid
+script/installation/.vagrant/machines/default/virtualbox/private_key
+script/installation/.vagrant/machines/default/virtualbox/synced_folders
+script/installation/.vagrant/machines/default/virtualbox/vagrant_cwd
+script/installation/.vagrant/rgloader/loader.rb
+
+script/installation/.vagrant
+python_whl
+

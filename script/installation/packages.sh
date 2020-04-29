@@ -85,7 +85,7 @@ function install_tf() {
     # Install Tensorflow Python Binary
     sudo -E pip3 install --upgrade pip
     # Related issue: https://github.com/pypa/pip/issues/3165
-    sudo -E pip3 install tensorflow==${TF_VERSION} --upgrade --ignore-installed six
+    sudo -E pip3 install tensorflow==${TF_VERSION} --upgrade --ignore-installed six 
 
     # Install C-API
     TFCApiURL="https://storage.googleapis.com/tensorflow/libtensorflow/${TFCApiFile}"
