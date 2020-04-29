@@ -9,7 +9,7 @@ VM_NAME = "PelotonVM"
 Vagrant.configure(2) do |config|
 
   # Pick a box to use
-  config.vm.box = "ubuntu/trusty64"
+  config.vm.box = "ubuntu/bionic64"
 
   # Config VM
   config.vm.provider :virtualbox do |vb|
@@ -35,8 +35,8 @@ Vagrant.configure(2) do |config|
 
   # Setup environment
   config.vm.provision :shell, :inline => "apt-get update"
-  config.vm.provision "shell", :path => "https://raw.githubusercontent.com/cmu-db/peloton/master/script/installation/packages.sh"
-  config.vm.provision "shell", :path => "https://raw.githubusercontent.com/cmu-db/peloton/master/script/installation/vagrant-customize.sh", :privileged => false
+  config.vm.provision "shell", :path => "./packages.sh"
+  config.vm.provision "shell", :path => "./vagrant-customize.sh", :privileged => false
 
   # Link current repo into VM
   config.vm.synced_folder "../..", "/peloton"
