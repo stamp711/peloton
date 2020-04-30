@@ -78,14 +78,13 @@ function install_tf() {
         echo "tensorflow already installed"
         return
     fi
-    #pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-    pip3 config set global.index-url http://mirrors.aliyun.com/pypi/simple/
     TFCApiFile=$1
     TF_VERSION=$2
     LinkerConfigCmd=$3
     TARGET_DIRECTORY="/usr/local"
     # Install Tensorflow Python Binary
     sudo -E pip3 install --upgrade pip
+    pip3 config set global.index-url http://mirrors.aliyun.com/pypi/simple
     # Related issue: https://github.com/pypa/pip/issues/3165
     sudo -E pip3 install tensorflow==${TF_VERSION} --upgrade --ignore-installed six
 
