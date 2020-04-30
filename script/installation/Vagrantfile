@@ -9,7 +9,7 @@ VM_NAME = "PelotonVM"
 Vagrant.configure(2) do |config|
 
   # Pick a box to use
-  config.vm.box = "ubuntu/bionic64"
+  config.vm.box = "ubuntu/xenial64"
 
   # Config VM
   config.vm.provider :virtualbox do |vb|
@@ -41,8 +41,4 @@ Vagrant.configure(2) do |config|
   # Link current repo into VM
   config.vm.synced_folder "../..", "/peloton"
 
-  
-  
-
-
-  end
+end

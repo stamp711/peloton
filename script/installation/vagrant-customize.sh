@@ -19,7 +19,7 @@ sudo apt-get -y install \
     valgrind \
     linux-tools-generic \
     vim \
-    emacs24-nox \
+    emacs-nox \
     python-virtualenv \
     python-numpy \
     uuid-dev \
