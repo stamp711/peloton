@@ -78,7 +78,8 @@ function install_tf() {
         echo "tensorflow already installed"
         return
     fi
-    pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+    #pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+    pip3 config set global.index-url http://mirrors.aliyun.com/pypi/simple/
     TFCApiFile=$1
     TF_VERSION=$2
     LinkerConfigCmd=$3
