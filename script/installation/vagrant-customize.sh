@@ -11,8 +11,6 @@
 
 # Install prerequisites
 sudo apt-get -y install \
-    #eclipse \
-    #eclipse-cdt \
     tmux \
     zsh \
     gdb \
